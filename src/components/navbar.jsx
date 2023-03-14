@@ -5,9 +5,11 @@ import "./navbar.css"
 
 export const Navbar = () => {
     return <div className="navbar">
-    <div className="links">
-        <Link to="/" id="shop">Shop</Link>
-        <Link to="/cart" ><FaShoppingCart size={32} color="#CAD5E2" id="cart" /></Link>
+    <div className="link">
+        <Link to="/" >Shop</Link>
+    </div>
+    <div className="link">
+        <Link to="/cart" className="cart" ><FaShoppingCart size={32} color="#CAD5E2" id="cart" /></Link>
     </div>
     </div>
 }
